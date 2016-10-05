@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  eater_id: 1
+  date: 2016-10-05
+  title: MyString
+
+two:
+  eater_id: 1
+  date: 2016-10-05
+  title: MyString
