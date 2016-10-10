@@ -7,4 +7,8 @@ Rails.application.routes.draw do
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   post '/logout' => 'sessions#destroy'
+
+  get '/events' => 'events#index'
+  get '/events/new' => 'events#new'
+  post '/events' => 'events#create'
 end

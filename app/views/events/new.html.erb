@@ -1,0 +1,9 @@
+<h3>Create a new YouGonnaEatThat? lunch event </h3>
+
+<%= form_tag "/events", method: :post do  %>
+  <div>
+    <%= label_tag :title, "Title" %>
+    <%= text_field_tag :title %>
+  </div>            
+  <%= submit_tag "Submit" %>
+<% end %>
