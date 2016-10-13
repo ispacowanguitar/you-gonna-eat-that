@@ -15,4 +15,9 @@ class EventsController < ApplicationController
     event.save
     redirect_to "/events"
   end
+
+  def show
+    @event = Event.find_by(id: params[:id])
+    render 'show.html.erb'
+  end
 end
