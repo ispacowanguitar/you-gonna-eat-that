@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   get '/events/:id/signup' => 'events#show'
 
   post '/eaters' => 'eaters#create'
+  get '/eaters/congrats' => 'eaters#congrats'
 end
