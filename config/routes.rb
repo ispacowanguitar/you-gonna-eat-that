@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   post '/events' => 'events#create'
   get '/events/:id/signup' => 'events#show'
 
+  get '/eaters' => 'eaters#index'
   post '/eaters' => 'eaters#create'
-  get '/eaters/congrats' => 'eaters#congrats'
+  get '/eaters/congrats/:id' => 'eaters#congrats'
 end
