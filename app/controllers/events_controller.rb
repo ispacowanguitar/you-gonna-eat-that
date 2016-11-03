@@ -18,6 +18,7 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find_by(id: params[:id])
+    @eaters = Eater.where(event_id: params[:id])
     render 'show.html.erb'
   end
 end

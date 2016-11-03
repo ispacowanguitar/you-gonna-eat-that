@@ -24,5 +24,11 @@
   <a href = "/events/"><p> cancel </p></a>
 <% end %>
 
+<h2>Employees signed up to eat that:</h2>
 
+<% @eaters.each do |eater| %>
+<%= eater.first_name %>  
+<%= eater.last_name %>  
+<br>
+<% end %>
 </div>
